@@ -16,7 +16,7 @@ int main()
         cout << "tuesday";
         break;
     case 3:
-        cout << "wedday";
+        cout << "wednesday";
         break;
     case 4:
         cout << "thrusday";
@@ -29,8 +29,11 @@ int main()
         break;
 
     default:
-        cout << "sunday";
+        cout << "sunday" << " ";
         break;
+        cout << "you are not going to excute";
     }
+
+    cout << "You are going to excute";
     return 0;
 }
