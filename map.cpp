@@ -29,5 +29,10 @@ int main()
 
         cout << mpp[number] << endl;
     }
+    // iterate in the map
+    for (auto it : mpp)
+    {
+        cout << it.first << "->" << it.second << endl;
+    }
     return 0;
 }
