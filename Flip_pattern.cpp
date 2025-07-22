@@ -67,18 +67,44 @@
 //     print(n);
 //     return 0;
 // }
+// #include <iostream>
+// using namespace std;
+
+// int start = 1;
+// void print(int n)
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << start << " ";
+//             start++;
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main()
+// {
+
+//     int n;
+//     cin >> n;
+//     print(n);
+
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 
 int start = 1;
 void print(int n)
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = n; i > 0; i--)
     {
-        for (int j = 1; j <= i; j++)
+        for (char ch = 'A'; ch < 'A' + i; ch++)
         {
-            cout << start << " ";
-            start++;
+            cout << ch << " ";
         }
         cout << endl;
     }
@@ -89,6 +115,7 @@ int main()
 
     int n;
     cin >> n;
+
     print(n);
 
     return 0;
