@@ -30,7 +30,7 @@
 //     print(n);
 
 //     return 0;
-
+// }
 // reverse the pattern
 
 // #include <iostream>
@@ -89,35 +89,37 @@
 
 // nested for loops pattern
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// void print(int n)
-// {
-//     for (int i = 1; i <= 2 * n - 1; i++)
-//     {
-//         int stars = i;
-//         if (i > n)
+void print(int n)
+{
+    for (int i = 1; i <= 2 * n - 1; i++)
+    {
+        int stars = i;
+        if (i > n)
 
-//           {  stars = 2 * n - i;}
+        {
+            stars = 2 * n - i;
+        }
 
-//         for (int j = 1; j <= stars; j++)
-//         {
-//             cout << "*";
-//         }
-//         cout << endl;
-//     }
-// }
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
 
-// int main()
-// {
+int main()
+{
 
-//     int n;
-//     cin >> n;
+    int n;
+    cin >> n;
 
-//     print(n);
+    print(n);
 
-//     return 0;
-// }
+    return 0;
+}
 
 // completed upto pattern 10 @ 39: 24
