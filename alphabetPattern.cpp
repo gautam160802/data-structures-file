@@ -123,11 +123,13 @@ void print(int n)
 {
     for (int i = 0; i < n; i++)
     {
-
-        for (char ch = 'E' - i; ch <= 'E'; ch++)
+        char ch = 'A';
+        ch = ch + (n - i - 1);
+        for (int j = 0; j <= i; j++)
         {
-            cout << ch << " ";
-                }
+            cout << ch;
+            ch++;
+        }
         cout << endl;
     }
 }
